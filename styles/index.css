@@ -1,0 +1,203 @@
+*{
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #222;
+  margin: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #E3B265;
+  background-color: #000;
+}
+
+div.sidebyside {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-auto-rows: minmax(auto, auto);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  right-margin: 32px;
+}
+
+div.wrapper {
+  display: flex;
+  background-color: #AAA;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+div.facewrapper {
+  border: 0px #000 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  position: relative;
+  right-margin: 12px;
+}
+
+div#robotSpeech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+div#robotFace {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+ height: 100%; 
+ width: 100%;
+ border: 0px red solid;
+}
+
+canvas {
+ position: absolute;
+ margin: 0px;
+ border: 2px gray solid;
+ height: 100px;
+ width: 100px;
+ background-color: black;
+ visibility: hidden;
+}
+
+div.topbar {
+  font-size: 18px;
+  display: flex;
+  background-color: #222;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+}
+
+div.scale{
+  height: 35px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 9fr 1fr;
+  align-items: center;
+}
+
+div.sliderName {
+  margin-right: 5px;
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+}
+
+div.sliderValue {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+div.minValue {
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+  color: #666;
+  margin-right:5px;
+}
+
+div.maxValue {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  color: #666;
+  margin-left:5px;
+}
+
+
+div.signinButton{
+  margin: 12px;
+}
+
+div.signinInfo{
+  font-size: 12px;
+  color: #DDD;
+  margin: 12px;
+}
+
+input {
+    font-size: 12px;
+}
+
+h1{
+  font-size: 24px; 
+  margin-bottom: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #257BFA;
+    cursor: pointer;
+}
+
+div#main{
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px gray dashed;
+}
+
+div.colorPicker{
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px gray dashed;
+  height: 35px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr 4fr 1fr 4fr 1fr;
+  align-items: center;
+}
+
+div.boolPicker {
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 2px gray dashed;
+  height: 35px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
